@@ -5,4 +5,4 @@ applications:
   routes:
   - route: production-pal-tracker-joel-leach.apps.evans.pal.pivotal.io
   env:
-    WELCOME_MESSAGE: Hello from Cloud Foundry production environment
+    WELCOME_MESSAGE: Hello from the production environment

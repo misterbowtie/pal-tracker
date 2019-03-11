@@ -5,4 +5,4 @@ applications:
   routes:
   - route: review-pal-tracker-joel-leach.apps.evans.pal.pivotal.io
   env:
-    WELCOME_MESSAGE: Hello from Cloud Foundry review environment
+    WELCOME_MESSAGE: Hello from the review environment

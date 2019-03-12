@@ -7,7 +7,7 @@ namespace PalTracker
 {
     public class InMemoryTimeEntryRepository : ITimeEntryRepository
     {
-        private Dictionary<long, TimeEntry> _timeEntryDict = new Dictionary<long, TimeEntry>();
+        private readonly IDictionary<long, TimeEntry> _timeEntryDict = new Dictionary<long, TimeEntry>();
         
         public TimeEntry Create(TimeEntry timeEntry)
         {

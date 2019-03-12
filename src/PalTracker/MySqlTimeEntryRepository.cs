@@ -33,9 +33,9 @@ namespace PalTracker
 
         public void Delete(long id)
         {
-            var timeEnt = FindRecord(id);
+            
 
-            _tec.TimeEntryRecords.Remove(timeEnt);
+            _tec.TimeEntryRecords.Remove(FindRecord(id));
             _tec.SaveChanges();
             
         }

@@ -34,8 +34,8 @@ namespace PalTracker
                                                              Configuration.GetValue<string>("CF_INSTANCE_INDEX", "CfInstanceIndex not configured"),
                                                              Configuration.GetValue<string>("CF_INSTANCE_ADDR", "CloudFoundry not configured")));
 
-            services.AddSingleton<ITimeEntryRepository, InMemoryTimeEntryRepository>();
-            //services.AddScoped<ITimeEntryRepository, MySqlTimeEntryRepository>();
+            
+            services.AddSingleton<ITimeEntryRepository, MySqlTimeEntryRepository>();
 
             services.AddDbContext<TimeEntryContext>(options => options.UseMySql(Configuration));
         }
